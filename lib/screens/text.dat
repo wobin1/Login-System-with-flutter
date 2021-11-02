@@ -26,3 +26,25 @@
                       ],
                     ),
                   )
+
+
+
+
+
+
+
+Row(children: [
+                          Checkbox(
+                              value: isRememberMe,
+                              activeColor: Palette.textColor2,
+                              onChanged: (value) {
+                                setState(() {
+                                  isRememberMe = !isRememberMe;
+                                });
+                              }),
+                          Text(
+                            'Remeber Me',
+                            style: TextStyle(
+                                fontSize: 12, color: Palette.textColor1),
+                          )
+                        ])
